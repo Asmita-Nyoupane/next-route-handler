@@ -6,8 +6,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-
+import { useTheme } from "../Global/ThemeContext";
 const ClientRoute = () => {
+  const theme = useTheme();
+  console.log("🚀 ~ ClientRoute ~ theme:", theme.colors.primary);
   const settings = {
     dots: true,
   };
@@ -15,7 +17,14 @@ const ClientRoute = () => {
   // const result = ServerOnlyFunction();
   return (
     <div>
-      <h2 className="text-center text-2xl font-bold py-10">Client Route </h2>
+      <h2
+        style={{
+          color: theme.colors.primary,
+          fontSize: "2rem",
+        }}
+      >
+        Client Route{" "}
+      </h2>
       {/* <p>{result}</p> */}
       <div className="image-slider-container">
         <Slider {...settings}>

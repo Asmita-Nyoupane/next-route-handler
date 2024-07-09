@@ -9,14 +9,14 @@ const ImageSlider = () => {
     dots: true,
   };
   return (
-    <div className="image-slider-container">
+    <div className="image-slider-container h-[80vh]">
       <Slider {...settings}>
         <div>
           <Image
             src="https://images.unsplash.com/photo-1613226505855-999302e0c08d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZSUyMG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
             alt="picture"
-            height={300}
-            width={300}
+            height={600}
+            width={600}
             className="object-cover aspect-square"
           />
         </div>
