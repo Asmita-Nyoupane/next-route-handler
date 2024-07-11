@@ -1,6 +1,6 @@
 import React from "react";
-import { ServerOnlyFunction } from "../utils/serverFunction";
-import ImageSlider from "../Components/image-slider";
+import { ServerOnlyFunction } from "../../utils/serverFunction";
+import ImageSlider from "../../Components/image-slider";
 const ServerRoute = () => {
   console.log("Server rote");
   const result = ServerOnlyFunction();

@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
-import { useTheme } from "../Global/ThemeContext";
+import { useTheme } from "../../Global/ThemeContext";
 const ClientRoute = () => {
   const theme = useTheme();
   console.log("🚀 ~ ClientRoute ~ theme:", theme.colors.primary);

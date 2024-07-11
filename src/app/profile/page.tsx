@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useTheme } from "../Global/ThemeContext";
+import { useTheme } from "../../Global/ThemeContext";
 const ProfilePage = () => {
   const theme = useTheme();
   return (
