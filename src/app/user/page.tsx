@@ -5,13 +5,14 @@ type User = {
   phone: string;
 };
 const UserPage = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/users");
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  const response = await fetch("https://jsonplaceholder.typicode.com/uses");
   const users = await response.json();
   return (
     <div className="flex flex-col gap-8  mt-10 place-items-center">
       <h2 className="text-4xl font-bold">User Details</h2>
       <div className="grid grid-cols-2 gap-6">
-        {users.map((user: User) => (
+        {users?.map((user: User) => (
           <div
             key={user.id}
             className="bg-pink-100 text-blue-800 px-6 py-4 rounded-md shadow-md "
